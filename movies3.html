@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>My Demon</title>
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    background:#000;
+    color:white;
+    font-family:Arial,sans-serif;
+}
+
+/* MAIN BOX */
+.movie{
+    width:90%;
+    max-width:1100px;
+    min-height:500px;
+
+    margin:50px auto;
+
+    display:flex;
+    align-items:stretch;
+
+    background:#111;
+    border-radius:15px;
+    overflow:hidden;
+}
+
+/* MY DEMON IMAGE */
+.movie img{
+    width:50%;
+    height:500px;
+
+    object-fit:cover;
+    object-position:center;
+}
+
+/* RIGHT SIDE */
+.movie-content{
+    width:50%;
+
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    align-items:center;
+
+    padding:40px;
+    text-align:center;
+
+    background:linear-gradient(
+        135deg,
+        #111,
+        #24151f
+    );
+}
+
+/* SMALL TITLE */
+.studio{
+    font-size:20px;
+    color:#aaa;
+    letter-spacing:3px;
+    margin-bottom:15px;
+}
+
+/* MY DEMON */
+.mydemon{
+    font-size:60px;
+    font-weight:bold;
+
+    letter-spacing:4px;
+
+    color:#fff;
+
+    text-shadow:
+        3px 3px 0px #555;
+}
+
+/* DESCRIPTION */
+.description{
+    color:#ccc;
+    font-size:16px;
+    line-height:1.6;
+
+    margin:25px 0;
+
+    max-width:450px;
+}
+
+/* WATCH BUTTON */
+.watch-btn{
+    background:#e50914;
+    color:white;
+
+    border:none;
+
+    padding:14px 30px;
+
+    font-size:17px;
+    font-weight:bold;
+
+    border-radius:5px;
+
+    cursor:pointer;
+}
+
+.watch-btn:hover{
+    background:#ff3030;
+    transform:scale(1.05);
+}
+
+
+/* MOBILE */
+@media(max-width:700px){
+
+    .movie{
+        width:95%;
+        flex-direction:column;
+    }
+
+    .movie img{
+        width:100%;
+        height:450px;
+    }
+
+    .movie-content{
+        width:100%;
+        padding:35px 20px;
+    }
+
+    .mydemon{
+        font-size:40px;
+    }
+
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="movie">
+
+    <!-- LEFT IMAGE -->
+    <img src="img03.html.jpeg" alt="My Demon">
+
+    <!-- RIGHT INFORMATION -->
+    <div class="movie-content">
+
+        <div class="studio">
+            K-DRAMA
+        </div>
+
+        <div class="mydemon">
+            MY DEMON
+        </div>
+
+        <p class="description">
+            A mysterious romance between a powerful
+            demon and a young woman whose life
+            unexpectedly becomes connected with his.
+        </p>
+
+        <button class="watch-btn">
+            Watch Now ➜
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+</html>

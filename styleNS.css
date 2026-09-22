@@ -1,0 +1,276 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #000;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+/* OFFER BAR */
+.offer {
+    height: 40px;
+    background: linear-gradient(
+        90deg,
+        #3b168f,
+        #e50914
+    );
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+}
+/* NAVBAR */
+.navbar {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px 5%;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+/* LOGO */
+html{
+    scroll-behavior: smooth;
+}
+.logo {
+    color: #e50914;
+    font-size: 22px;
+    font-weight: bold;
+    line-height: 18px;
+    margin-right: 40px;
+}
+/* NAV LINKS */
+.links {
+    display: flex;
+    gap: 25px;
+}
+.links a {
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.links a:hover {
+    color: #e50914;
+}
+/* RIGHT SIDE */
+.right {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+/* LANGUAGE */
+select {
+    background: #111;
+    color: white;
+    border: 1px solid #777;
+    padding: 7px;
+    border-radius: 4px;
+}
+/* SEARCH */
+.right input {
+    width: 150px;
+    padding: 8px;
+    background: #222;
+    color: white;
+    border: 1px solid #555;
+    border-radius: 4px;
+}
+.search-btn {
+    padding: 8px 10px;
+    background: #e50914;
+    color: white;
+    border: none;
+    border-radius: 4px;
+}
+/* SIGN IN */
+.sign {
+    background: #e50914;
+    color: white ;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* HERO */
+.hero {
+    height: 600px;
+    background-image:
+        linear-gradient(
+            rgba(0,0,0,0.55),
+            rgba(0,0,0,0.75)
+        ),
+        url("img1.html.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+/* HERO CONTENT */
+.hero-content h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+.hero-content p {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+.hero-content .small {
+    font-size: 14px;
+}
+/* EMAIL */
+.email-box {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 15px;
+}
+.email-box input {
+    width: 300px;
+    padding: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    border: 1px solid #aaa;
+    border-radius: 4px;
+}
+.email-box button {
+    background: #e50914;
+    color: white;
+    border: none;
+    padding: 15px 25px;
+    font-size: 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/* SECTION */
+.section {
+    padding: 40px 5%;
+}
+.section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+/* MOVIE CONTAINER */
+.movies-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+/* MOVIE ROW */
+.movies {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    scrollbar-width: none;
+    padding: 10px 50px;
+}
+.movies::-webkit-scrollbar {
+    display: none;
+}
+/* MOVIE IMAGE */
+.movies img {
+    width: 180px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    flex-shrink: 0;
+    transition: transform 0.3s;
+}
+.movies img:hover {
+    transform: scale(1.05);
+}
+/*ARROWS*/
+.arrow{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+
+    z-index: 5;
+
+    width: 45px;
+    height: 80px;
+
+    border: none;
+    background: rgba(0,0,0,0.7);
+
+    color: white;
+    font-size: 45px;
+
+    cursor: pointer;
+}
+.left{
+    left: 0;
+}
+
+.right{
+    right: 0;
+}
+/* CARDS */
+.cards {
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+}
+.card {
+    background: linear-gradient(
+        135deg,
+        #182044,
+        #261347
+    );
+    padding: 25px;
+    min-width: 250px;
+    min-height: 180px;
+    border-radius: 12px;
+}
+.card h3 {
+    margin-bottom: 15px;
+}
+.card p {
+    color: #ccc;
+    line-height: 1.5;
+}
+/* FOOTER */
+footer {
+
+    text-align: center;
+    padding: 40px;
+    background: #111;
+    color: #aaa;
+}
+footer h3 {
+    color: #e50914;
+    margin-bottom: 10px;
+}
+/* MOBILE */
+@media (max-width: 700px) {
+    .links {
+        display: none;
+    }
+    .right input {
+        display: none;
+    }
+    .hero {
+        height: 500px;
+    }
+    .hero-content h1 {
+        font-size: 35px;
+    }
+    .hero-content p {
+        font-size: 16px;
+    }
+    .email-box {
+        flex-direction: column;
+        align-items: center;
+    }
+    .email-box input {
+        width: 280px;
+    }
+}

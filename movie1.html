@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spider-Man</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+        /* MAIN MOVIE */
+        .movie {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            padding: 40px;
+        }
+        /* MOVIE IMAGE */
+        .movie img {
+            width: 450px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        /* MOVIE LOGO / TEXT */
+        .movie-logo {
+            text-align: center;
+            padding: 40px;
+            max-width: 650px;
+        }
+        .studio {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+        .spiderman {
+            color: red;
+            font-size: 70px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 4px 4px 0px #183b7a;
+        }
+        .brand {
+            color: #ffd400;
+            font-size: 35px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            margin-top: 10px;
+        }
+        /* BUTTON */
+        .button {
+            margin-top: 35px;
+        }
+        .button button {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        .button button:hover {
+            background: #ff1a25;
+        }
+        /* MOBILE */
+        @media (max-width: 700px) {
+            .movie {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .movie img {
+                width: 280px;
+                height: 380px;
+            }
+            .spiderman {
+                font-size: 40px;
+            }
+            .brand {
+                font-size: 22px;
+            }
+            .studio {
+                font-size: 18px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="movie">
+        <!-- MOVIE IMAGE -->
+        <img src="img01.html.jpeg" alt="Spider-Man">
+        <!-- MOVIE INFORMATION -->
+        <div class="movie-logo">
+            <div class="studio">
+                MARVEL STUDIOS
+            </div>
+            <div class="spiderman">
+                SPIDER-MAN
+            </div>
+            <div class="brand">
+                BRAND NEW DAY
+            </div>
+            <!-- WATCH BUTTON -->
+            <div class="button">
+                <button>▶ Watch Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website</title>
+    <link rel="stylesheet" href="styleNS.css">
+</head>
+<body>
+    <!--TOP /oFFER BAR-->
+    <div class="offer">
+        New to NS SCREEN? Try 14 days for ₹49.
+    </div>
+    <!--NAVBAR-->
+    <nav class="navbar">
+        <!--LOGO-->
+        <div class="logo">
+            NS <br>
+            SCREEN
+        </div>
+        <!--MENU-->
+        <div class="links">
+            <a href="#home">Home</a>
+            <a href="#trending">Movie</a>
+            <a href="#series">Series</a>
+            <a href="#about">About</a>
+        </div>
+        <div class="right">
+            <select>
+                <option>EN</option>
+                <option>हिंदी</option>
+            </select>
+            <!--SEARCH-->
+            <input type="text" placeholder="Search">
+            <button class="search-btn">🔍</button>
+            <button class="sign"> <a href="sign.html">Sign In </a></button>
+        </div>
+    </nav>
+    <!--HEROS SECTION-->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1> Unlimited Movies, <br>
+            show and more</h1>
+            <p class="small">Ready to watch? Enter your email to start.</p>
+            <div class="email-box">
+                <input type="email" placeholder="Email address">
+                <button>
+                    Get Started ➜
+                </button>
+            </div>
+        </div>
+    </section>
+    <!--TRENNDING SECTION-->
+    <section class="section" id="trending">
+        <h2>Trending Now</h2>
+        <div class="movies-container">
+            <!-- LEFT ARROW -->
+            <button class="arrow left" onclick="moveLeft()">
+                ❮
+            </button>
+            <!--MOVIES-->
+            <div class="movies" id="movies">
+                <div > <a href="movie1.html"><img src="img01.html.jpeg" alt="movie1"></a></div>
+                <div > <a href="movies2.html"><img src="img02.html.jpeg" alt="movie2"></a></div>
+                <div > <a href="movies3.html"><img src="img03.html.jpeg" alt="movie3"></a></div>
+                <div > <a href="movies4.html"><img src="img04.html.jpeg" alt="movie4"></a></div>
+                <div > <a href="movies5.html"><img src="img05.html.jpeg" alt="movie5"></a></div>
+                <div > <a href="movies6.html"><img src="img06.html.jpeg" alt="movie6"></a></div>
+                <div > <a href="movies7.html"><img src="img07.html.jpeg" alt="movie7"></a></div>
+                <div > <a href="movies8.html"><img src="img08.html.jpeg" alt="movie8"></a></div>
+                <div > <a href="movies9.html"><img src="img09.html.jpeg" alt="movie9"></a></div>
+            </div>
+            <!-- RIGHT ARROW -->
+            <button class="arrow right" onclick="moveRight()">
+                ❯
+            </button>
+        </div>
+    </section>
+    <!--MORE REASONS-->
+    <section class="section" id="series">
+        <h2>More Reason to Join</h2>
+        <div class="cards">
+            <div class="card">
+                <h3>Enjoy on your TV</h3>
+                <p>
+                    Watch on Smart TV, PlayStation,
+                    Xbox and more.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Download your shows</h3>
+                <p>
+                    Save your favourite shows
+                    and watch them offline.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Watch Everywhere</h3>
+                <p>
+                    Stream unlimited movies and
+                    shows on your devices.
+                </p>
+            </div>
+            <div class="card">
+                <h3>Create Profiles</h3>
+                <p>
+                    Create profiles for your
+                    family and friends.
+                </p>
+            </div>
+        </div>
+    </section>
+    <!--FOOTER-->
+    <footer id="about ">
+        <h3>NS SCREEN</h3>
+        <P>Watch Movie and Series anything.</P>
+        <p>© 2026 NS SCREEN | All Right Reserved</p>
+    </footer>
+    <!-- JAVASCRIPT -->
+    <script>
+        function moveLeft() {
+            document.getElementById("movies").scrollBy({
+                left: -500,
+                behavior: "smooth"
+            });
+        }
+        function moveRight() {
+            document.getElementById("movies").scrollBy({
+                left: 500,
+                behavior: "smooth"
+            });
+        }
+    </script>
+</body>
+</html>

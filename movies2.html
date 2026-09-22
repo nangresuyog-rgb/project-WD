@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Avengers Endgame</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+        }
+
+        /* MAIN MOVIE */
+        .movie {
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 50px;
+            padding: 40px;
+        }
+
+        /* MOVIE IMAGE */
+        .movie img {
+            width: 450px;
+            height: 600px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+
+        /* RIGHT SIDE */
+        .movie-logo {
+            text-align: center;
+            width: 600px;
+        }
+
+        .studio {
+            color: white;
+            font-size: 25px;
+            font-weight: bold;
+            margin-bottom: 20px;
+            letter-spacing: 3px;
+        }
+
+        .avengers {
+            color: #7b4cff;
+            font-size: 75px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-shadow: 4px 4px 0px #8b5a2b;
+        }
+
+        .endgame {
+            color: #ddd;
+            font-size: 45px;
+            font-weight: bold;
+            letter-spacing: 12px;
+            margin-top: 5px;
+        }
+
+        /* WATCH BUTTON */
+        .button {
+            margin-top: 40px;
+        }
+
+        .button button {
+            background: #e50914;
+            color: white;
+            border: none;
+            padding: 14px 30px;
+            font-size: 18px;
+            font-weight: bold;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .button button:hover {
+            background: #ff1a25;
+        }
+
+        /* MOBILE */
+        @media (max-width: 700px) {
+
+            .movie {
+                flex-direction: column;
+                gap: 20px;
+            }
+
+            .movie img {
+                width: 280px;
+                height: 380px;
+            }
+
+            .movie-logo {
+                width: 100%;
+            }
+
+            .avengers {
+                font-size: 40px;
+            }
+
+            .endgame {
+                font-size: 25px;
+                letter-spacing: 6px;
+            }
+
+            .studio {
+                font-size: 18px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="movie">
+
+        <!-- LEFT: IMAGE -->
+        <img src="img02.html.jpeg" alt="Avengers Endgame">
+
+        <!-- RIGHT: MOVIE DETAILS -->
+        <div class="movie-logo">
+
+            <div class="studio">
+                MARVEL STUDIOS
+            </div>
+
+            <div class="avengers">
+                AVENGERS
+            </div>
+
+            <div class="endgame">
+                ENDGAME
+            </div>
+
+            <div class="button">
+                <button>▶ Watch Now</button>
+            </div>
+
+        </div>
+
+    </div>
+
+</body>
+</html>
